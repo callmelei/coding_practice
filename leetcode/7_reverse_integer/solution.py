@@ -1,6 +1,12 @@
 class Solution:
     # @return an integer
     def reverse(self, x):
+        """
+        1032 / 1032 test cases passed.
+        Status: Accepted
+        Runtime: 48 ms
+        76.46%
+        """
         out = 0
         negative = 0
         if (x < 0):
