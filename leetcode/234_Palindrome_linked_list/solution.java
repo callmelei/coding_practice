@@ -69,16 +69,17 @@ Runtime: 2 ms
             return true;
         
         fast = slow = head;
-        /*handle odd nodes*/
-        //1->2->3->4->5->null
+        /*handle even nodes*/
+        //1->2->3->4->5->6->null
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
-        /*handle even nodes*/
-        //1->2->3->4->5->6->null
-        if (fast != null)
-            slow = slow.next;
+        // not must
+        ///*handle odd nodes*/
+        ////1->2->3->4->5->null
+        //if (fast != null)
+        //    slow = slow.next;
         
         /*reverse linked list*/
         prev = null;
